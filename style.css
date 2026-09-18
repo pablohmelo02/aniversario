@@ -1089,17 +1089,27 @@ footer > span {
   .nav-links { gap: 18px; }
   .nav-links a:first-child { display: none; }
 
-  .hero-photo { background-position: 61% center; }
+  .hero-photo {
+    background-color: var(--wine-dark);
+    background-position: center 11%;
+    background-repeat: no-repeat;
+    background-size: 135% auto;
+    transform: none;
+    animation: none;
+  }
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(36, 10, 19, 0.78), rgba(36, 10, 19, 0.08)),
-      linear-gradient(0deg, rgba(35, 9, 18, 0.78), transparent 65%);
+      linear-gradient(180deg, rgba(36, 10, 19, 0.08) 0%, rgba(36, 10, 19, 0.12) 30%, rgba(36, 10, 19, 0.9) 47%, var(--wine-dark) 58%),
+      linear-gradient(90deg, rgba(36, 10, 19, 0.28), transparent 48%, rgba(36, 10, 19, 0.12));
   }
 
   .hero-content {
+    width: 100%;
+    max-width: 100%;
     min-height: calc(100svh - 67px - env(safe-area-inset-top));
     justify-content: flex-end;
     padding: 44px calc(22px + env(safe-area-inset-right)) calc(58px + env(safe-area-inset-bottom)) calc(22px + env(safe-area-inset-left));
+    overflow: hidden;
   }
 
   .hero h1 {
@@ -1114,8 +1124,10 @@ footer > span {
   }
   .hero-copy {
     width: 100%;
+    max-width: 100%;
     padding-right: 16px;
     font-size: 0.9rem;
+    overflow-wrap: anywhere;
   }
   .hero-copy br { display: none; }
   .hero-note { display: none; }
@@ -1147,8 +1159,22 @@ footer > span {
 
   .memory-photo span { right: 12px; bottom: 12px; left: 12px; font-size: 0.96rem; }
 
-  .quote-break { min-height: 68svh; }
-  .quote-photo { background-attachment: scroll; background-position: 52% center; }
+  .quote-break {
+    min-height: max(68svh, 600px);
+    place-items: end center;
+    background: #2f0e1a;
+  }
+  .quote-photo {
+    background-color: #2f0e1a;
+    background-attachment: scroll;
+    background-position: center 9%;
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+  }
+  .quote-overlay {
+    background: linear-gradient(180deg, rgba(47, 14, 26, 0.18) 0%, rgba(47, 14, 26, 0.35) 38%, rgba(47, 14, 26, 0.88) 58%, rgba(47, 14, 26, 0.96) 100%);
+  }
+  .quote-break blockquote { padding: 48px 18px 54px; }
   .quote-break blockquote p { font-size: clamp(2.8rem, 13vw, 4.3rem); }
 
   .letter-intro {
