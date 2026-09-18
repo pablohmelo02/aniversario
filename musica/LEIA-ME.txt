@@ -1,0 +1,12 @@
+COLOQUE A MUSICA NESTA PASTA
+
+1. Escolha um arquivo de audio no formato MP3.
+2. Renomeie o arquivo para: musica.mp3
+3. Coloque-o nesta mesma pasta.
+
+O caminho final deve ficar assim:
+musica/musica.mp3
+
+A musica comeca quando a pessoa clica em "Abrir meu presente". Esse clique e
+necessario porque navegadores e celulares bloqueiam audio automatico antes da
+primeira interacao do visitante.

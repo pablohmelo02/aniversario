@@ -1,0 +1,11 @@
+# Arquivos-fonte e formatos que não são usados pelo site publicado
+Photos-1-001/
+
+# Temporários de testes locais
+.chrome-*/
+*-check.png
+node_modules/
+.tmp-*/
+
+# Configuração local da Vercel
+.vercel/
